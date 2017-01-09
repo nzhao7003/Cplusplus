@@ -87,7 +87,7 @@
      }  
      return true;  
  }
- # CString/string区别及其转化
+# CString/string区别及其转化
  利用MFC进行编程时,我们从对话框中利用GetWindowText得到的字符串是CString类型,CString是属于MFC的类.
  而一些标准C/C++库函数是不能直接对CString类型进行操作的.
  ## 1.CString和string的转化
