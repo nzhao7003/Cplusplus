@@ -1,6 +1,6 @@
 # C++判断字符串是否全是数字
 ## 方法一:判断字符的ASCII范围（数字的范围为48~57）
-   #include <iostream>
+   '#include <iostream>
    using namespace std;  
    bool AllisNum(string str);   
    int main( void )  
@@ -41,7 +41,7 @@
          }
      } 
      return true;
- }
+ }'
 ## 方法二:使用C++提供的stringstream对象
   #include <iostream>
   #include <sstream>  
