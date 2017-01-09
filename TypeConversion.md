@@ -26,65 +26,65 @@
           cin.get();
           return 0;  
         }
-  bool AllisNum(string str)  
-  {  
-    for (int i = 0; i < str.size(); i++)
-    {
-         int tmp = (int)str[i];
-         if (tmp >= 48 && tmp <= 57)
-         {
-             continue;
-         }
-         else
-         {
-             return false;
-         }
-     } 
-     return true;
- }
+        bool AllisNum(string str)  
+        {  
+            for (int i = 0; i < str.size(); i++)
+            {
+               int tmp = (int)str[i];
+               if (tmp >= 48 && tmp <= 57)
+               {
+                  continue;
+               }
+               else
+               {
+                  return false;
+               }
+            } 
+            return true;
+       }
 ## 方法二:使用C++提供的stringstream对象
-  #include <iostream>
-  #include <sstream>  
-  using namespace std;   
-  bool isNum(string str);   
-  int main( void )  
-  {
-     string str1 = "HelloWorld";  
-     string str2 = "1990";  
-     if(isNum(str1))  
-     {  
-         cout << "str1 is a num" << endl;  
-     }  
-     else
-     {  
-         cout << "str1 is not a num" << endl;   
-     }  
-     if(isNum(str2))  
-     {  
-         cout<<"str2 is a num"<<endl;  
-     }  
-     else
-     {  
-         cout<<"str2 is not a num"<<endl;   
-     }   
-     cin.get();
-     return 0;  
- }   
- bool isNum(string str)  
- {  
-     stringstream sin(str);  
-     double d;  
-     char c;  
-     if(!(sin >> d))  
-     {
-         return false;
-     }
-     if (sin >> c) 
-     {
-         return false;
-     }  
-     return true;  
- }
+           #include <iostream>
+           #include <sstream>  
+           using namespace std;   
+           bool isNum(string str);   
+           int main( void )  
+           {
+              string str1 = "HelloWorld";  
+              string str2 = "1990";  
+              if(isNum(str1))  
+              {  
+                  cout << "str1 is a num" << endl;  
+              }  
+              else
+              {  
+                  cout << "str1 is not a num" << endl;   
+              }  
+              if(isNum(str2))  
+              {  
+                  cout<<"str2 is a num"<<endl;  
+              }  
+              else
+              {  
+                  cout<<"str2 is not a num"<<endl;   
+              }   
+              cin.get();
+              return 0;  
+          }   
+          bool isNum(string str)  
+          {  
+              stringstream sin(str);  
+              double d;  
+              char c;  
+              if(!(sin >> d))  
+              {
+                  return false;
+              }
+              if (sin >> c) 
+              {
+                  return false;
+              }  
+              return true;  
+          }
 # CString/string区别及其转化
  利用MFC进行编程时,我们从对话框中利用GetWindowText得到的字符串是CString类型,CString是属于MFC的类.
  而一些标准C/C++库函数是不能直接对CString类型进行操作的.
