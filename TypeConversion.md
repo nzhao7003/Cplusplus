@@ -1,32 +1,30 @@
 # C++判断字符串是否全是数字
 ## 方法一:判断字符的ASCII范围（数字的范围为48~57）
- #include <iostream>
-  using namespace std;  
-  bool AllisNum(string str);   
-  int main( void )  
-  {  
-    string str1 = "HelloWorld";  
-    string str2 = "1990";  
-    if (AllisNum(str1))
-    {
-      cout<<"str1 is a num"<<endl;  
-    }
-    else
-    {
-      cout<<"str1 is not a num"<<endl;  
-    }
-
-    if (AllisNum(str2))
-    {
-      cout<<"str2 is a num"<<endl;  
-    }
-    else
-    {
-      cout<<"str2 is not a num"<<endl;  
-    }
-
-    cin.get();
-    return 0;  
+#include <iostream>
+using namespace std;  
+bool AllisNum(string str);   
+int main( void )  
+{  
+  string str1 = "HelloWorld";  
+  string str2 = "1990";  
+  if (AllisNum(str1))
+  {
+    cout<<"str1 is a num"<<endl;  
+  }
+  else
+  {
+    cout<<"str1 is not a num"<<endl;  
+  }
+  if (AllisNum(str2))
+  {
+    cout<<"str2 is a num"<<endl;  
+  }
+  else
+  {
+    cout<<"str2 is not a num"<<endl;  
+  }
+  cin.get();
+  return 0;  
   }
   bool AllisNum(string str)  
   {  
