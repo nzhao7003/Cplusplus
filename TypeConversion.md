@@ -90,7 +90,7 @@
 # CString/string区别及其转化
  利用MFC进行编程时,我们从对话框中利用GetWindowText得到的字符串是CString类型,CString是属于MFC的类.
  而一些标准C/C++库函数是不能直接对CString类型进行操作的.
- ## 1.CString和string的转化
+## 1.CString和string的转化
     string str="Hello";
     CString cstr(str.c_str());//或者CString cstr(str.data());初始化时才行
     cstr=str.c_str();或者cstr=str.data();
@@ -99,12 +99,12 @@
     cstr.format("%s", str.data()); //string->CString
     str = LPCSTR(cstr); //CString->string
     /*c_str()和data()区别是：前者返回带'/0'的字符串，后者则返回不带'/0'的字符串*/
- ## 2.CString和int的转换
+## 2.CString和int的转换
     int i=123;
     CString str;
     str.format("%d",i);//int->CString 其他的基本类型转化类似
     i=atoi(str);//CString->int 还有(atof,atol)
- ## 3.char*和CString的转换
+## 3.char*和CString的转换
     CStringcstr="Hello";
     char* ptemp=cstr.getbuffer(0);
     char* str;
