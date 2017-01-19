@@ -22,3 +22,13 @@
 
 
 ![1](https://github.com/nzhao7003/Cplusplus/blob/master/image/1.jpg)
+
+
+# 例二:
+    struct B
+    {
+        char a;
+        double b;
+        int c;
+    }S2;
+    
