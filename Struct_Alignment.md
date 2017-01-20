@@ -33,12 +33,96 @@
     }S2;
     sizeof(S2) = 24;
 
+
 ![2](https://github.com/nzhao7003/Cplusplus/blob/master/image/2.jpg)
 
 
 # 例三:
     struct C
     {
-        double a
-    }
+        double a;
+        char b;
+        int c;
+    }S3;
+    sizeof(S3) = 16;
     
+
+![3](https://github.com/nzhao7003/Cplusplus/blob/master/image/3.jpg)
+
+
+# 例四:
+    struct D
+    {
+        double a;
+        char b;
+        int c;
+        char d;
+    }S4;
+    sizeof(S4) = 24;
+    
+    
+![4](https://github.com/nzhao7003/Cplusplus/blob/master/image/4.jpg)
+
+
+# 例五:
+    struct E
+    {
+        double a;
+        char b;
+        int c;
+        char d;
+        int e;
+    }S5;
+    sizeof(S5) = 24;
+    
+    
+![5](https://github.com/nzhao7003/Cplusplus/blob/master/image/5.jpg)
+
+
+# 例六:
+    struct F
+    {
+        int a;
+        double b;
+        char c;
+        int d;
+        char f;
+    }S6;
+    sizeof(S6) = 32;
+    
+    
+![6](https://github.com/nzhao7003/Cplusplus/blob/master/image/6.jpg)
+
+
+# 例七:
+    struct X
+    {
+        char *a;
+    }S1;
+    sizeof(S1) = 4;
+    struct Y
+    {
+        int *b;
+    }S2;
+    sizeof(S2) = 4;
+    struct Z
+    {
+        double *c;
+    }S3;
+    sizeof(S3) = 4;
+    
+# 例八:
+    struct X
+    {
+        char a;
+        int b;
+        double c;
+    };
+    struct Y
+    {
+        char a;
+        X b;    
+    }
+    sizeof(X) = 16;sizeof(Y) = 24;
+### 分析:
+计算Y的存储长度时,在存放第二个元素b时的初始位置是在double型的长度8的整数倍处,而非16的整数倍处,即系统为b所分配的存储空间是第8~23个字节
