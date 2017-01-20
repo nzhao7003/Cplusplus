@@ -31,4 +31,14 @@
         double b;
         int c;
     }S2;
+    sizeof(S2) = 24;
+
+![2](https://github.com/nzhao7003/Cplusplus/blob/master/image/2.jpg)
+
+
+# 例三:
+    struct C
+    {
+        double a
+    }
     
