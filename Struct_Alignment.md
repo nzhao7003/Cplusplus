@@ -68,7 +68,7 @@
     struct E
     {
         double a;
-        char b;
+        char c;
         int c;
         char d;
         int e;
@@ -82,11 +82,11 @@
 # 例六:
     struct F
     {
-        int a;
-        double b;
-        char c;
-        int d;
-        char f;
+        int e;
+        double a;
+        char b;
+        int c;
+        char d;
     }S6;
     sizeof(S6) = 32;
     
